@@ -60,13 +60,13 @@ ImageButton.BorderColor3 = Color3.fromRGB(255, 182, 193)  --
 ImageButton.Position = UDim2.new(0.120833337, 0, 0.0952890813, 0)
 ImageButton.Size = UDim2.new(0, 55, 0, 55)  
 ImageButton.Draggable = true
-ImageButton.Image = "rbxassetid://87567481752287"
+ImageButton.Image = "rbxassetid://112612480151400"
 
 UICorner.Parent = ImageButton
 UICorner.CornerRadius = UDim.new(1, 0)  -- ทำให้ปุ่มเป็นวงกลม
 
 ClickSound.Parent = ImageButton
-ClickSound.SoundId = "rbxassetid://130785805"
+ClickSound.SoundId = "rbxassetid://112612480151400"
 ClickSound.Volume = 1
 
 local function playClickAnimation()
@@ -91,12 +91,12 @@ local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/d
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
 
 local Window = Fluent:CreateWindow({
-    Title = "NEXUS HUB",
-    SubTitle = "Fisch Beta By Config And Xesonz",
+    Title = "Nexus Hub",
+    SubTitle = "Fisch Beta by Xesonz/Rain/Config",
     TabWidth = 160,
     Size = UDim2.fromOffset(560, 400),
     Acrylic = true, -- The blur may be detectable, setting this to false disables blur entirely
-    Theme = "Rose",
+    Theme = "Aqua",
     MinimizeKey = Enum.KeyCode.LeftControl -- Used when theres no MinimizeKeybind
 })
 
@@ -110,8 +110,8 @@ local Options = Fluent.Options
 
 do
     Fluent:Notify({
-        Title = "NEXUS HUB",
-        Content = "ติ๋มๆจิ้มหี",
+        Title = "Nexus Hub",
+        Content = "Fisch Beta",
         SubContent = "SubContent", -- Optional
         Duration = 3 -- Set to nil to make the notification not disappear
     })
@@ -256,7 +256,7 @@ local Islandlist = {
 }
 local SelectIsland = Tabs.Main:AddDropdown("Dropdown", {
     Title = "Select Island",
-    Description = "เลือกเกาะ",
+    Description = "เลือกเกราะ",
     Values = Islandlist,
     Multi = false,
     Default = nil,
@@ -450,7 +450,7 @@ SaveManager:BuildConfigSection(Tabs.Settings)
 Window:SelectTab(1)
 
 Fluent:Notify({
-    Title = "NEXUS HUB",
+    Title = "Nexus Hub",
     Content = "สำเร็จแล้วครับ!",
     Duration = 8
 })
